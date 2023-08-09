@@ -640,9 +640,9 @@ class UNetModel(nn.Module):
                 input_block_chans.append(ch)
                 ds *= 2
                 self._feature_size += ch
-
-        if num_head_channels == -1:
-            dim_head = ch // num_heads
+# up to here
+        if num_head_channels == -1: # num_head_channels = 64
+            dim_head = ch // num_heads # ch = 320 ; num_heads = 
         else:
             num_heads = ch // num_head_channels
             dim_head = num_head_channels

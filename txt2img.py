@@ -386,3 +386,5 @@ def main(opt):
 if __name__ == "__main__":
     opt = parse_args()
     main(opt)
+
+# python txt2img.py --prompt "render of a green cube on gray background" --ckpt /export/data/vislearn/rother_subgroup/feiden/models/pretrained/stable_diffusion/v2-1_768-ema-pruned.ckpt --config configs/stable-diffusion/v2-inference-v.yaml --H 768 --W 768 --device cuda  
